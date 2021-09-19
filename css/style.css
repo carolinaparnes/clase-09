@@ -38,8 +38,10 @@ a {
     /*background-color: black !important; Importante recordar que esto puede alterar elementos no deseados*/
 }
 
+/*Primer pseudoclase*/
 a:hover { 
     background-color:white;
+   
 }
 #iniciar {
     color: white;
@@ -48,7 +50,10 @@ a:hover {
     background-color: white;
     color: black;
 }
-
+body > table > tbody > tr {
+    background-color: black;
+    color: white;
+}
 body > table > tbody > tr > td:nth-child(1) > aside {
     background-color: black;
     color: white;
@@ -64,3 +69,34 @@ ul, h2 {
 .fa-chess-queen{
     color: red;
 }
+
+tr:nth-child(odd) > td {
+    padding-top: 50px;
+}
+
+/*************************************************************************/
+/*   Estilo del componente Musica Boton -                                */
+/*************************************************************************/
+
+@keyframes cambiarcolor { 
+    from { background-color: red;}
+    to { background-color: yellow;}
+}
+.musicbutton {
+    border-color: red;
+    border-style: none;
+    border-width: 10px;
+   /* transition: ease-out;
+    transition-duration: 1s;*/
+    animation-name: cambiarcolor;
+    animation-duration: 5s;
+
+}
+
+.musicbutton:hover { 
+   background-color: red;
+   box-shadow: green;
+}
+/*************************************************************************/
+/*   Estilo del componente Boton - fondo blanco                          */
+/*************************************************************************/
